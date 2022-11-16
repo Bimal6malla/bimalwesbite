@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+#home {
+    background: url(images/background.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* background-attachment: fixed; */
+}
+#home i{
+    color: white;
+    display: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 12%;
+    height: 50px; 
+    margin-top: 10px;
+}
+.nav-list ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+
+.nav-list ul li a:hover {
+    color: rgb(102, 0, 255);
+    transform: translateX(-2px);
+}
+.logo p{
+    color: white;
+    font-size: 20px;
+    border: 5px solid rgb(20, 220, 20);
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.img {
+    width: 100px;
+}
+
+.identy p,
+h1 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.identy span {
+    color: crimson;
+}
+
+.identy p {
+    font-size: 20px;
+}
+
+.identy {
+    margin-top: 15%;
+    margin-left: 12%;
+    display: inline-block;
+}
+
+/*---------------- About section---------------- */
+/* 
+#about{
+    margin: 80px 12%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.boy-img{
+    width: 30%;
+    border-radius: 10px;
+}
+.about-data{
+    color: white;
+    display: grid;
+    justify-content: center;
+    margin: 0 0 0 10%;
+.about-data p{
+    font-size: 15px;
+    /* margin-top: -60px; */
+
+/*     
+}
+.see{
+    display:flex;
+    /* margin-top: 2%; */
+/* text-align: center;
+}
+.see p{ 
+    
+}  */
+.about-data {
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 80px 12%;
+    color: white;
+}
+
+.boy-img img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-data {
+    margin-left: 10%;
+
+}
+
+.see {
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.see p {
+    margin-right: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.about-data p {
+    font-size: 15px;
+    opacity: 80%;
+}
+
+.about-data span {
+    font-size: 14px;
+}
+
+.skills {
+    margin-top: 15px;
+}
+
+.tab-contens {
+    display: none;
+}
+
+.skills {
+    display: block;
+}
+
+span {
+    color: #ff004f;
+}
+
+/* ---------services------------------- */
+#services {
+    margin: 80px 12%;
+}
+
+.content {
+    color: white;
+}
+
+.boxes {
+    margin: 5% 0;
+}
+
+.datas {
+    width: 270px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(61, 61, 61, 0.785);
+    transition: 0.6s;
+}
+
+.datas a {
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.datas p {
+    opacity: 80%;
+    font-size: 13px;
+    margin-bottom: 13px;
+    font-weight: 300;
+}
+
+.datas h2 {
+    margin-bottom: 11px;
+    font-weight: 600;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datas:hover {
+    border-radius: 20px;
+    background-color: crimson;
+    transform: translateY(-10px);
+}
+
+.datas i {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ------------------My work----------- */
+#mywork {
+    margin: 80px 12%;
+}
+
+.work img {
+    width: 80%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.layer h3 {
+    margin-bottom: 11px;
+    font-size: 18px;
+}
+
+.layer p {
+    font-size: 13px;
+    line-height: 18px;
+}
+.layer i{
+    text-align: center;
+    width: 100%;
+    font-size: 21px;
+}
+
+.layer {
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    /* position: absolute;
+    top: 0;
+    bottom: 0; */
+    /* overflow: hidden; */
+}
+
+.btn {
+    /* background-color: red; */
+    text-align: center;
+    width: 94%;
+    transition: 0.5s;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    border: 1px solid rgba(220, 20, 60, 0.799);
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.7s;
+}
+
+.btn a:hover {
+    background-color: #ff004f;
+
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+/* -----------contact---------------- */
+.col-left {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    flex-basis: 30%;
+}
+
+.data {
+    margin: 40px 0;
+}
+
+.data h1 {
+    margin-bottom: 20px;
+}
+
+.ia i {
+    color: crimson;
+    margin-right: 10px;
+
+}
+
+.social i {
+    color: gray;
+    margin-right: 15px;
+    font-size: 25px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.social i:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn2 a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: rgba(220, 20, 60, 0.797);
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+.btn2 {
+    margin: 30px 20px;
+}
+
+.contr {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    background-color: rgba(128, 128, 128, 0.31);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+
+}
+
+.col-right {
+    flex-basis: 60%;
+    margin-left: 1px;
+}
+
+button {
+    width: 20%;
+    padding: 8px 1px;
+    background-color: rgba(220, 20, 60, 0.797);
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.31);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------small device--------------- */
+@media only screen and (max-width:600px) {
+    body {
+        /* background-color: red; */
+    }
+
+    #home {
+        background: url(images/phone-background.png);
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        /* width: 100%; */
+        font-size: 20px;
+    }
+    #home i{
+        color: white;
+        display: block;
+        position: absolute;
+        right: 19px;
+        top: 19px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .nav-list ul {
+        /* display: none; */
+        background-color:#ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px ;
+        flex-direction: column;
+        text-align: center;
+        z-index: 2;
+        transition: 0.6s;
+    }
+    .nav-list ul li{
+        display: block;
+        padding-top: 25px;
+    }
+
+    .identy {
+        position: absolute;
+        top: 30%;
+
+    }
+
+    .identy p,h1{
+        font-size: 15px;
+        line-height: 40px;
+    }
+    .identy h1{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 60px 8%;
+        text-align: center;
+    }
+
+    /* -------------about----------------------------- */
+    #about {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -30px;
+        /* background-color: red; */
+    }
+
+    .container h1 {
+        padding-bottom: 35px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .boy-img img {
+        width: 250px;
+    }
+
+    .about-data {
+        margin: 5%;
+        text-align: left;
+    }
+
+    .about-data p {
+        font-size: 14px;
+    }
+
+    .see p {
+        margin-right: 45px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    /* -----------------service------------ */
+    .boxes {
+        flex-direction: column;
+    }
+
+    .datas {
+        margin: 8px 0;
+    }
+
+    #services {
+        margin: 30px 8%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*-------------------------- work------------------------- */
+    #mywork {
+        margin: 40px 8%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work img {
+        width: 80%;
+        height: 250px;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+
+    .work {
+        padding-left: 30px;
+        width: 350px;
+    }
+
+    .content h1 {
+        padding-left: 4rem;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+
+    /* ------------contact------------ */
+    .contr {
+        flex-direction: column;
+    }
+    button {
+        width: 33%;
+        padding: 8px 20px;
+        font-weight: 100;
+    }
+    .footer{
+        font-size: 13px;
+    }
+}
